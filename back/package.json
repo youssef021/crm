@@ -1,0 +1,38 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.0.0",
+    "digital-link.js": "^1.2.2",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.0",
+    "express-session": "^1.17.1",
+    "express-sse": "^0.5.3",
+    "formidable": "^1.2.2",
+    "googleapis": "^67.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.21.15",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.6",
+    "pg": "^8.5.1",
+    "role-acl": "^4.5.4",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6",
+    "prettier": "2.2.1"
+  }
+}
