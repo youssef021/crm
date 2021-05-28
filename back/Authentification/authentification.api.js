@@ -2,7 +2,7 @@ const app = require("../index");
 const config = require("./config");
 const jwt = require("jsonwebtoken");
 const { use } = require("../index");
-app.post("/v3/signin", async (req, res) => {
+app.post("/signin", async (req, res) => {
   //console.log(req.body)
   const [user] = await app.db
     .from("user")

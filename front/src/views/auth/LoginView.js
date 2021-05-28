@@ -23,7 +23,7 @@ import { faEye } from "@fortawesome/free-solid-svg-icons";
 import { Eye as eyepassword} from 'react-feather'
 const eye = <FontAwesomeIcon icon={faEye} />;
 
-var urlpostuser = require('../../const/userurl')() +"/api/users/signin"
+var urlpostuser = require('../../const/userurl')() +"/signin"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -73,7 +73,7 @@ const LoginView = () => {
 
                 console.log(response.data)
 
-                if (response.data.success) {
+                if (response.status ===200) {
                   navigate('/app/adddl', { replace: true });
 
                 } else {
@@ -81,6 +81,12 @@ const LoginView = () => {
                   alert(response.data.message)
 
                 }
+              })
+              .catch(()=>{
+                alert("esponse.data.message")
+                  window.location.reload();
+
+
               })
 
              /*  if(values.email =="gs1tools@gs1tools.fr" && values.password =="gs1tools1"){

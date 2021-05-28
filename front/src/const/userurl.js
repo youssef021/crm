@@ -4,7 +4,7 @@
 *example fy1.fr
  
 */
-var url = "http://3.21.109.168:3001";
+var url = "http://127.0.0.1:3002";
 module.exports = () => {
 	return url;
 };
